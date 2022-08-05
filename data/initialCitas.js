@@ -1,0 +1,20 @@
+const initialCitas = [
+
+        {id:1, fecha: "2021-06-20", hora: "14:00", paciente: "Juan Carlos Velez", atiende: "Carolina Henao", estado: "reservado"},
+        {id:2, fecha: "2021-06-20", hora: "10:00", paciente: "Sandra Marin", atiende: "Carolina Henao", estado: "reservado"},
+        {id:3, fecha: "2021-06-05", hora: "13:00", paciente: "Catalina Fernandez", atiende: "Carolina Henao", estado: "reservado"},
+        {id:4, fecha: "2021-06-05", hora: "8:00", paciente: "Camila Soto", atiende: "Carolina Henao", estado: "reservado"},
+        {id:5, fecha: "2021-06-27", hora: "11:00", paciente: "Andres Velez", atiende: "Sara", estado: "reservado"},
+        {id:6, fecha: "2021-06-27", hora: "15:00", paciente: "Jose valderrama", atiende: "Carolina Henao", estado: "reservado"},
+        {id:7, fecha: "2021-06-27", hora: "12:00", paciente: "Carlos Perez", atiende: "Carolina Henao", estado: "reservado"},
+        {id:8, fecha: "2021-06-27", hora: "9:00", paciente: "JAna Castrillon", atiende: "Camila", estado: "reservado"},
+        {id:9, fecha: "2021-06-27", hora: "17:00", paciente: "JAna Castrillon", atiende: "Camila", estado: "reservado"},
+        {id:10, fecha: "2021-06-28", hora: "9:00", paciente: "Catalina Fernandez", atiende: "Camila", estado: "reservado"},
+        {id:11, fecha: "2021-06-28", hora: "10:00", paciente: "JAna Castrillon", atiende: "Carolina Henao", estado: "reservado"},
+        {id:12, fecha: "2021-06-28", hora: "11:00", paciente: "JAna Castrillon", atiende: "Carolina Henao", estado: "reservado"},
+        {id:13, fecha: "2021-06-28", hora: "12:00", paciente: "Camila Soto", atiende: "Camila", estado: "reservado"},
+        {id:14, fecha: "2021-06-29", hora: "15:00", paciente: "JAna Castrillon", atiende: "Carolina Henao", estado: "reservado"},
+        {id:15, fecha: "2021-06-29", hora: "17:00", paciente: "Catalina Fernandez", atiende: "Camila", estado: "reservado"},
+]
+
+export default initialCitas;
