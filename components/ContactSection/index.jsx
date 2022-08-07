@@ -6,11 +6,11 @@ import Image from 'next/image'
 
 const ContactSection = () => {
     return (
-        <section>
-            <div className="flex items-center min-h-screen p-4 bg-indigo-100">
+        <section id="contact">
+            <div className="flex items-center min-h-screen p-4 bg-gray-50">
                 <div className="container grid grid-cols-1 mx-auto lg:grid-cols-2">
                     <div className="relative flex flex-col items-start justify-center lg:p-8">
-                        <div className="absolute hidden -right-96 -bottom-40 lg:block">
+                        <div className="absolute hidden -right-80 -bottom-40 lg:block">
                             <Image
                                 className=""
                                 src={"/static/img/contactenos.svg"}

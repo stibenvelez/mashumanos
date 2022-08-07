@@ -3,7 +3,7 @@ import CardServicio from './CardServicio'
 
 const ServicesSection = ({ services }) => {
     return (
-        <section>
+        <section id='services'>
             <div className="flex min-h-screen p-4 bg-gray-50">
                 <div className="container p-2 mx-auto space-y-4">
                     <div className="space-y-2">

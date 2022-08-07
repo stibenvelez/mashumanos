@@ -14,12 +14,12 @@ const NavbarComponent = () => {
                   </Link>
               </li>
               <li className="font-bold text-blue-500 cursor-pointer hover:text-purple-600">
-                  <Link href="/services">
+                  <Link href="/#services">
                       <a>Services</a>
                   </Link>
               </li>
              <li className="font-bold text-blue-500 cursor-pointer hover:text-purple-600">
-                  <Link href="/contact">
+                  <Link href="/#contact">
                       <a>Contact</a>
                   </Link>
               </li> 

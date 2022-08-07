@@ -3,10 +3,10 @@ import IconService from "./IconService";
 
 const IconsSection = () => {
     return (
-        <div className="min-h-[500px] bg-indigo-100 w-full p-4">
+        <section id="icons" className="min-h-[500px] bg-indigo-100 w-full p-4">
             <div className="container mx-auto">
                 <div className="container">
-                    <h2 className="text-indigo-900 text-6xl font-bold text-center ">
+                    <h2 className="text-6xl font-bold text-center text-indigo-900 ">
                         Pensamos en ti
                     </h2>
                     <p className="text-center">
@@ -31,7 +31,7 @@ const IconsSection = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
