@@ -53,6 +53,7 @@ const AboutSection = () => {
                             width={400}
                             height={500}
                             layout="responsive"
+                            alt="about"
                         />
                     </div>
                 </div>

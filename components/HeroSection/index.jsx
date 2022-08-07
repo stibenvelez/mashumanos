@@ -14,8 +14,8 @@ const HeroSection = () => {
                         Psicológica
                     </h1>
                     <p className="w-full text-2xl font-bold text-center text-blue-700">
-                        "... Perderse puede suceder, incluso, cuando sabes dónde
-                        estás."
+                        ... Perderse puede suceder, incluso, cuando sabes dónde
+                        estás
                     </p>
                 </div>
                 <div className="">
