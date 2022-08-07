@@ -37,7 +37,7 @@ const FormContact = () => {
 
 
     return (
-        <div className="w-full max-w-xl p-4 mx-auto shadow-sm lg:p-8 bg-slate-700 rounded-xl lg:w-3/4">
+        <div className="w-full max-w-xl p-4 shadow-sm lg:p-8 bg-slate-700 rounded-xl lg:w-3/4">
             <form onSubmit={EnviarMensaje}>
                 <div className="space-y-4">
                     <h4 className="text-2xl text-center text-white">
