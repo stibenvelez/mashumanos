@@ -2,29 +2,44 @@ import React from 'react'
 import CardServicio from './CardServicio'
 
 const ServicesSection = ({ services }) => {
-    console.log(services)
     return (
         <section>
-            <div className='min-h-screen bg-gray-50 p-4 flex'>
-                <div className="container mx-auto p-2 space-y-4">
-                    <div className='mb-4'>
-                        <h2 className="text-indigo-900 text-6xl font-bold text-center ">Servicios</h2>
-                        <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sequi laborum dolore</p>
+            <div className="flex min-h-screen p-4 bg-gray-50">
+                <div className="container p-2 mx-auto space-y-4">
+                    <div className="space-y-2">
+                        <h2 className="text-lg font-bold text-center text-blue-500 ">
+                            Servicios
+                        </h2>
+                        <h3 className="text-6xl font-bold text-center text-gray-600 capitalize">
+                            Conoce nuestros servicios
+                        </h3>
+                        <p className="text-lg font-semibold text-center text-gray-700 ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iste sequi laborum dolore
+                        </p>
                     </div>
-                    <div className="flex gap-4 flex-wrap justify-center">
-                        {services && services.map((service, index) => (
-                            <CardServicio
-                                key={index}
-                                titulo={service.servicio}
-                                descripcion={service.descripcionCorta}
-                                img={service.img}
-                            />
-                        ))}
+                    <div className="flex flex-wrap justify-center gap-4 py-4">
+                        {services &&
+                            services
+                                .slice(0, 3)
+                                .map((service, index) => (
+                                    <CardServicio
+                                        key={index}
+                                        titulo={service.servicio}
+                                        descripcion={service.descripcionCorta}
+                                        img={service.img}
+                                    />
+                                ))}
+                    </div>
+                    <div className="flex justify-center">
+                        <button className="px-4 py-2 text-white bg-blue-500 rounded-full">
+                            Ver mas
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 
