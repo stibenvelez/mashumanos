@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
 import Navbar from "../Navbar";
-
+const initialState = {
+    stickyClass: "h-20",
+};
 const Header = () => {
-    const [stickyClass, setStickyClass] = useState("");
+    const [stickyClass, setStickyClass] = useState(initialState.stickyClass);
 
     function stickNavbar() {
         let windowHeight = window.scrollY;
-        console.log(windowHeight);
         setStickyClass(
             windowHeight > 0
                 ? "bg-gray-100/90 backdrop-blur-sm shadow h-16"
-                : "h-20"
+                : initialState.stickyClass
         );
     }
 
