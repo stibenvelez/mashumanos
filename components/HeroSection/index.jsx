@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const HeroSection = () => {
     return (
@@ -29,6 +29,6 @@ const HeroSection = () => {
             </div>
         </section>
     );
-}
+};
 
 export default HeroSection;

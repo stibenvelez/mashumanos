@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BeakerIcon, CheckCircleIcon } from "@heroicons/react/outline";
+import { CheckCircleIcon } from "@heroicons/react/outline";
 
 const AboutSection = () => {
     return (

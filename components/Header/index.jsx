@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import Navbar from "../Navbar";
 
 const Header = () => {
@@ -19,9 +18,10 @@ const Header = () => {
         window.addEventListener("scroll", stickNavbar);
     }, []);
 
-
     return (
-        <div className={`fixed w-full ${stickyClass} transition-all duration-300  ease-in-out z-10 hidden lg:block`}>
+        <div
+            className={`fixed w-full ${stickyClass} transition-all duration-300  ease-in-out z-10 hidden lg:block`}
+        >
             <div className="container flex items-center justify-center h-full mx-auto">
                 {/* <div className="flex items-center ">
                     <Link href="/" className="cursor-pointer">

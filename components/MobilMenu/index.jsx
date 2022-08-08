@@ -1,4 +1,4 @@
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { MenuIcon } from "@heroicons/react/outline";
 import { useState } from "react";
 import { dataNavbar } from "../Navbar/dataNavbar";
 import Slide from "../Slide";
@@ -66,7 +66,9 @@ const MobilMenu = () => {
                                 className="h-6 text-gray-400 transition duration-200 ease-in-out cursor-pointer hover:text-blue-500"
                             />
                         </div>
-                        <p className="text-center text-gray-400  text-md">Más Humanos - 2022</p>
+                        <p className="text-center text-gray-400  text-md">
+                            Más Humanos - 2022
+                        </p>
                     </div>
                 </div>
             </Slide>

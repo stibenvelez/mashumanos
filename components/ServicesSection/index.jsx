@@ -1,5 +1,4 @@
-import React from 'react'
-import CardServicio from './CardServicio'
+import CardServicio from "./CardServicio";
 
 const ServicesSection = ({ services }) => {
     return (
@@ -40,8 +39,6 @@ const ServicesSection = ({ services }) => {
             </div>
         </section>
     );
-}
+};
 
-
-
-export default ServicesSection
+export default ServicesSection;

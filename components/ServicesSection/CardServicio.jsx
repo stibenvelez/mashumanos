@@ -1,5 +1,4 @@
-import React from 'react';
-import Image from 'next/image';
+import Image from "next/image";
 
 const CardServicio = ({ titulo, descripcion, img }) => {
     return (
@@ -48,6 +47,6 @@ const CardServicio = ({ titulo, descripcion, img }) => {
             </div>
         </div>
     );
-}
+};
 
 export default CardServicio;

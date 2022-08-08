@@ -2,8 +2,6 @@ import React from 'react';
 import FormContact from '../FormContact';
 import Image from 'next/image'
 
-
-
 const ContactSection = () => {
     return (
         <section id="contact">

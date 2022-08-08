@@ -1,40 +1,38 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
 
 const FormContact = () => {
-
     const [mensajeContacto, guardarmensajeContacto] = useState({
-        nombre: 'prueba',
-        email: '',
-        mensaje: '',
-        empresa: 'Mas Humanos'
-    })
+        nombre: "prueba",
+        email: "",
+        mensaje: "",
+        empresa: "Mas Humanos",
+    });
 
-    const [error, guardarError] = useState(false)
+    const [error, guardarError] = useState(false);
 
-
-    const actualizarStateMensaje = e => {
+    const actualizarStateMensaje = (e) => {
         guardarmensajeContacto({
-
             ...mensajeContacto,
-            [e.target.name]: e.target.value
-        })
-    }
-    const { nombre, email, mensaje } = mensajeContacto
+            [e.target.name]: e.target.value,
+        });
+    };
+    const { nombre, email, mensaje } = mensajeContacto;
 
-    const EnviarMensaje = e => {
+    const EnviarMensaje = (e) => {
         e.preventDefault();
 
         //validar
-        if (nombre.trim() === '' || email.trim() === '' || mensaje.trim() === '') {
-            guardarError(true)
-            return null
+        if (
+            nombre.trim() === "" ||
+            email.trim() === "" ||
+            mensaje.trim() === ""
+        ) {
+            guardarError(true);
+            return null;
         }
 
-        guardarError(false)
-
-    }
-
+        guardarError(false);
+    };
 
     return (
         <div className="w-full max-w-xl p-4 shadow-sm lg:p-8 bg-slate-700 rounded-xl lg:w-3/4">
@@ -127,6 +125,6 @@ const FormContact = () => {
             )}
         </div>
     );
-}
+};
 
 export default FormContact;
