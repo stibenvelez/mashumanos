@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Footer from "../Footer";
 import Header from "../Header";
+import MobilMenu from "../MobilMenu";
+
 
 
 
@@ -16,6 +18,7 @@ const Layout = ({ children }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
+            <MobilMenu/>
             <main>{children}</main>
             <Footer/>
         </>

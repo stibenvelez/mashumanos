@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from "./HeroSection.module.css";
-
+import Link from 'next/link';
 
 const HeroSection = () => {
     return (
-        <section className={`${styles.heroContent} bg-gray-50`}>
-            <div className="flex flex-col items-center justify-start w-full h-screen space-y-4 overflow-hidden pt-52">
-                <div className="flex flex-col justify-start gap-4">
-                    <h1 className="font-bold text-center text-blue-500 text-8xl">
+        <section
+            className={`bg-[url('/static/img/hero01.svg')] bg-no-repeat lg:bg-cover bg-[center_bottom_5rem] lg:bg-center bg-gray-50 `}
+        >
+            <div className="flex flex-col items-center justify-start w-full h-screen gap-10 overflow-hidden pt-52">
+                <div className="flex flex-col justify-start space-y-4">
+                    <h1 className="font-bold text-center text-blue-500 text-6xl lg:text-8xl">
                         <span className="font-bold text-yellow-500">
                             Consulta{" "}
                         </span>
@@ -19,12 +21,12 @@ const HeroSection = () => {
                     </p>
                 </div>
                 <div className="">
-                    <button
-                        type="button"
-                        className="px-6 py-4 font-bold text-white bg-blue-500 rounded-full"
-                    >
-                        Más información
-                    </button>
+                    <Link href="/#contact">
+                        <a className="px-6 py-4 font-bold text-white bg-blue-500 rounded-full">
+                            {" "}
+                            Más Información
+                        </a>
+                    </Link>
                 </div>
             </div>
         </section>
