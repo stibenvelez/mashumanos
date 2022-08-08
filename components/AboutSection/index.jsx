@@ -4,8 +4,8 @@ import { BeakerIcon, CheckCircleIcon } from "@heroicons/react/outline";
 const AboutSection = () => {
     return (
         <section id="about" className=" bg-gray-50">
-            <div className="container flex flex-col items-center justify-center min-h-screen mx-auto ">
-                <div className="grid w-full grid-cols-2 ">
+            <div className="container p-2  flex flex-col items-center justify-center min-h-screen mx-auto ">
+                <div className="grid w-full lg:grid-cols-2 grid-cols-1">
                     <div className="flex flex-col justify-center">
                         <h2 className="text-lg font-bold text-blue-500 ">
                             Acerca de Nostros

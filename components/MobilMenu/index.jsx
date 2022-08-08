@@ -47,7 +47,7 @@ const MobilMenu = () => {
                             </ul>
                         </nav>
                     </div>
-                    <div className="py-4">
+                    <div className="py-4 FLEX justify-center">
                         <div className="flex justify-center w-full gap-2 py-2">
                             <FontAwesomeIcon
                                 icon={faFacebook}
@@ -66,6 +66,7 @@ const MobilMenu = () => {
                                 className="h-6 text-gray-400 transition duration-200 ease-in-out cursor-pointer hover:text-blue-500"
                             />
                         </div>
+                        <p className="text-center text-gray-400  text-md">Más Humanos - 2022</p>
                     </div>
                 </div>
             </Slide>

@@ -1,5 +1,3 @@
-import React from 'react';
-import styles from "./HeroSection.module.css";
 import Link from 'next/link';
 
 const HeroSection = () => {

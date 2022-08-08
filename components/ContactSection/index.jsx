@@ -8,7 +8,7 @@ const ContactSection = () => {
     return (
         <section id="contact">
             <div className="flex items-center min-h-screen p-4 bg-gray-50">
-                <div className="container grid grid-cols-1 mx-auto lg:grid-cols-2">
+                <div className="container grid grid-cols-1 mx-auto lg:grid-cols-2 space-y-4">
                     <div className="relative flex flex-col items-start justify-start lg:p-8 ">
                         <div className="absolute hidden -right-52 -bottom-40 lg:block">
                             <Image
@@ -35,7 +35,7 @@ const ContactSection = () => {
                         </div>
                     </div>
 
-                    <div className=" flex justify-end p-8 ">
+                    <div className=" flex justify-end lg:p-8 ">
                         <FormContact className="" />
                     </div>
                 </div>

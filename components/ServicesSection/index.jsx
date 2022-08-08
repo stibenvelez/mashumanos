@@ -4,8 +4,8 @@ import CardServicio from './CardServicio'
 const ServicesSection = ({ services }) => {
     return (
         <section id='services'>
-            <div className="flex min-h-screen p-4 bg-gray-50">
-                <div className="container p-2 mx-auto space-y-4 flex flex-col items-center justify-center">
+            <div className="flex min-h-screen bg-gray-50">
+                <div className="container  mx-auto space-y-4 flex flex-col items-center justify-center">
                     <div className="space-y-2">
                         <h2 className="text-lg font-bold text-center text-blue-500 ">
                             Servicios
