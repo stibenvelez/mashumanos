@@ -34,7 +34,7 @@ const CardServicio = ({ titulo, descripcion, img }) => {
                     href="#"
                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:text-blue-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
-                    Ver más
+                    Ver
                     <svg
                         aria-hidden="true"
                         className="w-4 h-4 ml-2 -mr-1"

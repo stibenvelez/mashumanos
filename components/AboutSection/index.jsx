@@ -3,7 +3,7 @@ import { BeakerIcon, CheckCircleIcon } from "@heroicons/react/outline";
 
 const AboutSection = () => {
     return (
-        <section id="about" className=" bg-gray-50">
+        <section id="about" className=" bg-gray-50 overflow-hidden">
             <div className="container p-2  flex flex-col items-center justify-center min-h-screen mx-auto ">
                 <div className="grid w-full lg:grid-cols-2 grid-cols-1">
                     <div className="flex flex-col justify-center">
@@ -42,7 +42,7 @@ const AboutSection = () => {
                             <div className="flex gap-2">
                                 <CheckCircleIcon className="w-5 h-5 text-green-500" />
                                 <p className="font-bold text-gray-500">
-                                    Libero incidunt, laudantium 
+                                    Libero incidunt, laudantium
                                 </p>
                             </div>
                         </div>
