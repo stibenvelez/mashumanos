@@ -1,4 +1,3 @@
-import React from 'react';
 import FormContact from '../FormContact';
 import Image from 'next/image'
 
@@ -34,11 +33,11 @@ const ContactSection = () => {
                     </div>
 
                     <div className=" flex justify-end lg:p-8 ">
-                        <FormContact className="" />
+                        <FormContact/>
                     </div>
                 </div>
             </div>
         </section>
-    ); s
+    );
 }
 export default ContactSection;

@@ -1,6 +1,16 @@
 import CardServicio from "./CardServicio";
 
-const ServicesSection = ({ services }) => {
+type ServicesSectionpProps = {
+    services: {
+        service: string;
+        shortDescription: string;
+        longDescription: string;
+        image: string;
+        state:boolean;
+    }[];
+};
+
+const ServicesSection = ({ services }: ServicesSectionpProps) => {
     return (
         <section id="services">
             <div className="flex min-h-screen bg-gray-50">
@@ -21,9 +31,9 @@ const ServicesSection = ({ services }) => {
                         {services.slice(0, 3).map((service, index) => (
                             <CardServicio
                                 key={index}
-                                titulo={service?.servicio}
-                                descripcion={service?.descripcionCorta}
-                                img={service?.img}
+                                titulo={service?.service}
+                                descripcion={service?.shortDescription}
+                                img={service?.image}
                             />
                         ))}
                     </div>

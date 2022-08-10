@@ -3,7 +3,8 @@ import Footer from "../Footer";
 import Header from "../Header";
 import MobilMenu from "../MobilMenu";
 
-const Layout = ({ children }) => {
+
+const Layout = ({ children}) => {
     return (
         <>
             <Head>

@@ -10,7 +10,7 @@ const FormContact = () => {
 
     const [error, guardarError] = useState(false);
 
-    const actualizarStateMensaje = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         guardarmensajeContacto({
             ...mensajeContacto,
             [e.target.name]: e.target.value,
@@ -18,7 +18,7 @@ const FormContact = () => {
     };
     const { nombre, email, mensaje } = mensajeContacto;
 
-    const EnviarMensaje = (e) => {
+    const EnviarMensaje = (e: React.ChangeEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         //validar
@@ -54,7 +54,7 @@ const FormContact = () => {
                                 type="email"
                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 id="email"
-                                onChange={actualizarStateMensaje}
+                                onChange={handleChange}
                                 placeholder="Tu email"
                             />
                         </div>
@@ -71,7 +71,7 @@ const FormContact = () => {
                             type="text"
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             id="floatingNombre"
-                            onChange={actualizarStateMensaje}
+                            onChange={handleChange}
                             placeholder="Tu nombre"
                         />
                     </div>
@@ -84,7 +84,7 @@ const FormContact = () => {
                             Email
                         </label>
                         <input
-                            onChange={actualizarStateMensaje}
+                            onChange={handleChange}
                             name="email"
                             type="email"
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -102,10 +102,10 @@ const FormContact = () => {
                         </label>
                         <textarea
                             name="message"
-                            onChange={actualizarStateMensaje}
+                            onChange={handleChange}
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             id="message"
-                            rows="5"
+                            rows={5}
                         ></textarea>
                     </div>
 

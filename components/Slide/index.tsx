@@ -2,7 +2,19 @@ import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 
-const Slide = ({ children, isOpen = true, setOpen, title = "" }) => {
+interface SlideInterface {
+    children?: React.ReactNode;
+    isOpen: boolean;
+    setOpen: (value:boolean) => void;
+    title?: string;
+}
+
+const Slide = ({
+    children,
+    isOpen = true,
+    setOpen,
+    title = "",
+}: SlideInterface) => {
     return (
         <Transition.Root show={isOpen} as={Fragment}>
             <Dialog

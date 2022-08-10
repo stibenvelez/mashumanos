@@ -11,11 +11,11 @@ const ServiciosBD = [
     },
     
     {
-        servicio: 'Procesos de Selección',
-        descripcionCorta: 'Se asesora a las compañias PyMes dentro de su procesos de selección, realizando procesos de perfilamiento, entrevistas, pruebas psicotécnicas y realización de informes.',
-        descripcionLarga: 'Se asesora a las compañias PyMes dentro de su procesos de selección, realizando procesos de perfilamiento, entrevistas, pruebas psicotécnicas y realización de informes.',
+        service: 'Procesos de Selección',
+        shortDescription: 'Se asesora a las compañias PyMes dentro de su procesos de selección, realizando procesos de perfilamiento, entrevistas, pruebas psicotécnicas y realización de informes.',
+        longDescription: 'Se asesora a las compañias PyMes dentro de su procesos de selección, realizando procesos de perfilamiento, entrevistas, pruebas psicotécnicas y realización de informes.',
         img: 'service2.jpg',
-        estado: true
+        state: true
     },
     
     {

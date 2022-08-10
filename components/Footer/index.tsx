@@ -6,8 +6,6 @@ import {
     faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-import React from "react";
-
 const Footer = () => {
     return (
         <section className="min-h-[400px] bg-gray-800 flex flex-col justify-center">
