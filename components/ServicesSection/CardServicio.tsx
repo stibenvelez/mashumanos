@@ -1,6 +1,14 @@
 import Image from "next/image";
 
-const CardServicio = ({ titulo, descripcion, img }) => {
+interface CardServicioProps {
+    title: string;
+    description: string;
+    image: string;
+}
+
+
+
+const CardServicio = ({ title, description, image }: CardServicioProps) => {
     return (
         <div className="flex flex-col justify-between max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">
             <div className="">
@@ -11,7 +19,7 @@ const CardServicio = ({ titulo, descripcion, img }) => {
                             layout="responsive"
                             width={500}
                             height={300}
-                            src={`/static/img/${img}`}
+                            src={`/static/img/${image}`}
                             alt=""
                         />
                     </a>
@@ -19,10 +27,10 @@ const CardServicio = ({ titulo, descripcion, img }) => {
                 <div className="p-5">
                     <a href="#">
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-blue-500 dark:text-white">
-                            {titulo}
+                            {title}
                         </h5>
                     </a>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{`${descripcion.slice(
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{`${description.slice(
                         0,
                         200
                     )}...`}</p>
