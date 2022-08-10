@@ -6,27 +6,29 @@ import AboutSection from '../components/AboutSection';
 import  ServiciosBD  from '../data/services';
 
 
-const Home = () => {
+const Home = ({ services }) => {
   return (
     <>
       <Layout>
         <HeroSection />
         <AboutSection />
-        <ServicesSection services={ServiciosBD} />
+        <ServicesSection services={services} />
         <ContactSection />
       </Layout>
     </>
   )
 }
-/*
+
+
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://localhost:3000/api/services`)
+  const res = await fetch(`${process.env.API_URL}/services`)
   const services = await res.json()
+  console.log(services)
   return {
     props: {
       services
     },
   }
 }
-*/
+
 export default Home;

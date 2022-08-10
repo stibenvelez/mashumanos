@@ -8,7 +8,7 @@ const ContactSection = () => {
             <div className="flex items-center min-h-screen p-4 bg-gray-50 overflow-hidden">
                 <div className="container grid grid-cols-1 mx-auto lg:grid-cols-2 space-y-4">
                     <div className="relative flex flex-col items-start justify-start lg:p-8 ">
-                        <div className="absolute hidden -right-52 -bottom-40 lg:block">
+                        <div className="absolute hidden -right-52 -bottom-40 lg:block ">
                             <Image
                                 className=""
                                 src={"/static/img/contactenos.svg"}
@@ -17,7 +17,7 @@ const ContactSection = () => {
                                 height={800}
                             />
                         </div>
-                        <div className="z-10">
+                        <div className="absolute">
                             <h2 className="text-lg font-bold text-blue-500 ">
                                 Contacto
                             </h2>
