@@ -31,7 +31,7 @@ const ServicesSection = ({ services }: ServicesSectionpProps) => {
                         </p>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 py-4">
-                        {services&&services.slice(0, 3).map((service, index) => (
+                        {services&&[].map((service, index) => (
                             <CardServicio
                                 key={index}
                                 title={service.service}
