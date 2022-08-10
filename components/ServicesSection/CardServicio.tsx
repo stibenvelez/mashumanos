@@ -20,7 +20,8 @@ const CardServicio = ({ title, description, image }: CardServicioProps) => {
                             width={500}
                             height={300}
                             src={`/static/img/${image}`}
-                            alt=""
+                            alt={`imagen de servicio ${title}`}
+                            priority
                         />
                     </a>
                 </div>
@@ -30,10 +31,9 @@ const CardServicio = ({ title, description, image }: CardServicioProps) => {
                             {title}
                         </h5>
                     </a>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{`${description.slice(
-                        0,
-                        200
-                    )}...`}</p>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{`${
+                        description && description.slice(0, 200)
+                    }...`}</p>
                 </div>
             </div>
             <div className="p-5">
