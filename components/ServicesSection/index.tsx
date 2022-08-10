@@ -31,14 +31,15 @@ const ServicesSection = ({ services }: ServicesSectionpProps) => {
                         </p>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 py-4">
-                        {services&&[].map((service, index) => (
-                            <CardServicio
-                                key={index}
-                                title={service.service}
-                                description={service.shortDescription}
-                                image={service.image}
-                            />
-                        ))}
+                        {services &&
+                            services.map((service, index) => (
+                                <CardServicio
+                                    key={index}
+                                    title={service.service}
+                                    description={service.shortDescription}
+                                    image={service.image}
+                                />
+                            ))}
                     </div>
                     <div className="flex justify-center">
                         <button className="px-4 py-2 text-white transition-all duration-200 ease-in-out bg-blue-600 rounded-full hover:translate-y-2 hover:bg-blue-500">
