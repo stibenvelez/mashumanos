@@ -4,8 +4,8 @@ import Image from 'next/image'
 const ContactSection = () => {
     return (
         <section id="contact">
-            <div className="flex items-center min-h-screen p-4 bg-gray-50 overflow-hidden">
-                <div className="container grid grid-cols-1 mx-auto lg:grid-cols-2 space-y-4">
+            <div className="flex items-center min-h-screen p-4 overflow-hidden bg-gray-50">
+                <div className="container grid grid-cols-1 mx-auto space-y-4 lg:grid-cols-2">
                     <div className="relative flex flex-col items-start justify-start lg:p-8 ">
                         <div className="absolute hidden -right-52 -bottom-40 lg:block ">
                             <Image
@@ -16,11 +16,11 @@ const ContactSection = () => {
                                 height={800}
                             />
                         </div>
-                        <div className="absolute">
-                            <h2 className="text-lg font-bold text-blue-500 ">
+                        <div className="lg:absolute">
+                            <h2 className="font-bold text-center text-blue-500 lg:text-left ">
                                 Contacto
                             </h2>
-                            <h3 className="text-4xl lg:text-6xl font-bold text-gray-600 ">
+                            <h3 className="text-4xl font-bold text-center text-gray-600 lg:text-6xl">
                                 Puedes Contactarte Con Nosotros
                             </h3>
                             <p className="text-lg font-semibold text-gray-700 ">
@@ -32,8 +32,8 @@ const ContactSection = () => {
                         </div>
                     </div>
 
-                    <div className=" flex justify-end lg:p-8 ">
-                        <FormContact/>
+                    <div className="flex justify-center lg:justify-end lg:p-8">
+                        <FormContact />
                     </div>
                 </div>
             </div>

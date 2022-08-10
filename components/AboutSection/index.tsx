@@ -3,17 +3,17 @@ import { CheckCircleIcon } from "@heroicons/react/outline";
 
 const AboutSection = () => {
     return (
-        <section id="about" className=" bg-gray-50 overflow-hidden">
-            <div className="container p-2  flex flex-col items-center justify-center min-h-screen mx-auto ">
-                <div className="grid w-full lg:grid-cols-2 grid-cols-1">
+        <section id="about" className="overflow-hidden  bg-gray-50">
+            <div className="container flex flex-col items-center justify-center min-h-screen p-2 mx-auto ">
+                <div className="grid w-full grid-cols-1 lg:grid-cols-2">
                     <div className="flex flex-col justify-center">
-                        <h2 className="text-lg font-bold text-blue-500 ">
+                        <h2 className="text-lg font-bold text-center text-blue-500 lg:text-left">
                             Acerca de Nostros
                         </h2>
-                        <h3 className="mb-4 text-6xl font-bold text-gray-600">
+                        <h3 className="mb-4 text-6xl font-bold text-center text-gray-600 lg:text-left">
                             Acerca de nuestra organización
                         </h3>
-                        <p className="text-gray-500">
+                        <p className="text-center text-gray-500 lg:text-left">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Provident, corrupti. Nemo sapiente similique
                             cumque alias? Facilis obcaecati quos, ab veritatis
