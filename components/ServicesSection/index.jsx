@@ -18,16 +18,14 @@ const ServicesSection = ({ services }) => {
                         </p>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 py-4">
-                        {/* {services
-                                .slice(0, 3)
-                                .map((service, index) => (
-                                    <CardServicio
-                                        key={index}
-                                        titulo={service.servicio}
-                                        descripcion={service.descripcionCorta}
-                                        img={service.img}
-                                    />
-                                ))} */}
+                        {services.slice(0, 3).map((service, index) => (
+                            <CardServicio
+                                key={index}
+                                titulo={service?.servicio}
+                                descripcion={service?.descripcionCorta}
+                                img={service?.img}
+                            />
+                        ))}
                     </div>
                     <div className="flex justify-center">
                         <button className="px-4 py-2 text-white bg-blue-600 rounded-full hover:translate-y-2 transition-all duration-200 ease-in-out hover:bg-blue-500">
