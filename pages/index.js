@@ -7,12 +7,13 @@ import  ServiciosBD  from '../data/services';
 
 
 const Home = ({ services }) => {
+  console.log(services);
   return (
     <>
       <Layout>
         <HeroSection />
         <AboutSection />
-        <ServicesSection services={services} />
+        {/* <ServicesSection services={services} /> */}
         <ContactSection />
       </Layout>
     </>
