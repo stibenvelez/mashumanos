@@ -15,7 +15,7 @@ const Home = ({ services }) => {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="fixed flex items-center justify-center p-2 transition-all duration-200 ease-in-out bg-green-600 rounded-full right-4 bottom-4 w-14 hover:bg-green-400"
+                        className="fixed z-50 flex items-center justify-center p-2 transition-all duration-200 ease-in-out bg-green-600 rounded-full right-4 bottom-4 w-14 hover:bg-green-400"
                     >
                         <FontAwesomeIcon
                             className="shadow-sm text-green-50 "
