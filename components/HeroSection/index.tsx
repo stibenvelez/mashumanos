@@ -3,7 +3,7 @@ import Link from "next/link";
 const HeroSection = () => {
     return (
         <section
-            className={`bg-[url('/static/img/hero-01.svg')] bg-no-repeat p-2 lg:bg-cover bg-[center_bottom_5rem] lg:bg-center  bg-gray-50 `}
+            className={`bg-[url('/static/img/hero-01.svg')] bg-cover  bg-no-repeat p-2 bg-[center_top_6rem] lg:bg-center  bg-gray-50 `}
         >
             <div className="container mx-auto ">
                 <div className="flex flex-col w-full h-screen gap-10 overflow-hidden ustify-start pt-52">
