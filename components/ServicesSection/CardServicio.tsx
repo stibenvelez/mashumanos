@@ -1,14 +1,19 @@
 import Image from "next/image";
+import { FC } from "react";
 
-interface CardServicioProps {
-    title: string;
-    description: string;
+interface Service {
+    service: string;
     image: string;
+    shortDescription: string;
 }
 
+interface CardServicioProps {
+    service: Service;
+}
 
+const CardServicio: FC<CardServicioProps> = ({ service }) => {
+    const { service: title, image, shortDescription } = service;
 
-const CardServicio = ({ title, description, image }: CardServicioProps) => {
     return (
         <div className="flex flex-col justify-between max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">
             <div className="">
@@ -32,7 +37,7 @@ const CardServicio = ({ title, description, image }: CardServicioProps) => {
                         </h5>
                     </a>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{`${
-                        description && description.slice(0, 200)
+                        shortDescription && shortDescription.slice(0, 200)
                     }...`}</p>
                 </div>
             </div>

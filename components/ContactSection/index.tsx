@@ -7,7 +7,7 @@ const ContactSection = () => {
             <div className="flex items-center min-h-screen p-4 overflow-hidden bg-gray-50">
                 <div className="container grid grid-cols-1 mx-auto space-y-4 lg:grid-cols-2">
                     <div className="relative flex flex-col items-start justify-start lg:p-8 ">
-                        <div className="absolute hidden -right-52 -bottom-40 lg:block ">
+                        <div className="absolute hidden -right-52 -bottom-48 lg:block ">
                             <Image
                                 className=""
                                 src={"/static/img/contactenos.svg"}
@@ -21,13 +21,15 @@ const ContactSection = () => {
                                 Contacto
                             </h2>
                             <h3 className="text-4xl font-bold text-center text-gray-600 lg:text-6xl">
-                                Puedes Contactarte Con Nosotros
+                                Acerquémonos un poco más
                             </h3>
                             <p className="text-lg font-semibold text-gray-700 ">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Phasellus laoreet, enim ut
-                                interdum imperdiet, dolor nisl commodo dui, eget
-                                molestie augue nunc consectetur dolor.
+                                Déjanos tus dudas, inquietudes o sugerencias,
+                                prometemos responderte lo antes posible. Si
+                                deseas programar una asesoría psicológica puedes
+                                ingresar por la opción de WhatsApp y te daremos
+                                la información correspondiente ò envíanos tus
+                                datos para contactarte.
                             </p>
                         </div>
                     </div>

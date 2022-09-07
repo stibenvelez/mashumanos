@@ -1,9 +1,11 @@
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Navbar from "../Navbar";
 const initialState = {
     stickyClass: "h-20",
 };
 const Header = () => {
+       const { pathname } = useRouter();
     const [stickyClass, setStickyClass] = useState(initialState.stickyClass);
 
     function stickNavbar() {
@@ -21,7 +23,9 @@ const Header = () => {
 
     return (
         <div
-            className={`fixed w-full ${stickyClass} transition-all duration-300  ease-in-out z-10 hidden lg:block`}
+            className={`${
+                pathname !== "/" ? "block" : "fixed"
+            } w-full ${stickyClass} transition-all duration-300  ease-in-out z-10 hidden lg:block`}
         >
             <div className="container flex items-center justify-center h-full mx-auto">
                 {/* <div className="flex items-center ">

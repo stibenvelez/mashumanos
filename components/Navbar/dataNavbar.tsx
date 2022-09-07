@@ -8,11 +8,11 @@ export const dataNavbar = [
         path: "/#about",
     },
     {
-        name: "Contacto",
-        path: "/#contact",
-    },
-    {
         name: "Servicios",
         path: "/#services",
+    },
+    {
+        name: "Contacto",
+        path: "/#contact",
     },
 ];

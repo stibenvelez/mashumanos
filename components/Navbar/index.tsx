@@ -1,7 +1,10 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { dataNavbar } from "./dataNavbar";
 
 const NavbarComponent = () => {
+ 
+
     return (
         <nav>
             <ul className="flex justify-center gap-4">
