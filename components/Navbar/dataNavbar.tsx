@@ -12,6 +12,10 @@ export const dataNavbar = [
         path: "/#services",
     },
     {
+        name: "Psicólogas",
+        path: "/#team",
+    },
+    {
         name: "Contacto",
         path: "/#contact",
     },

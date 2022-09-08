@@ -35,11 +35,11 @@ const FormContact = () => {
     };
 
     return (
-        <div className="w-full max-w-xl p-4 shadow-sm lg:p-8 bg-slate-700 rounded-xl lg:w-3/4">
+        <div className="w-full max-w-xl p-4 shadow-sm lg:p-8 bg-blue-900 rounded-xl lg:w-3/4">
             <form onSubmit={EnviarMensaje}>
                 <div className="space-y-4">
                     <h4 className="text-2xl text-center text-white">
-                        Enviar un email
+                        Envianos un email
                     </h4>
 
                     <div className="">
@@ -94,7 +94,7 @@ const FormContact = () => {
 
                     <button
                         type="submit"
-                        className="w-full px-2 py-1 text-white bg-purple-700 rounded"
+                        className="w-full px-2 py-1 text-white bg-blue-400 rounded hover:bg-red-400 transition-all duration-200 ease-in-out"
                     >
                         Enviar
                     </button>

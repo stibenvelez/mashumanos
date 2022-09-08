@@ -8,7 +8,7 @@ const HeroSection = () => {
             <div className="container mx-auto ">
                 <div className="flex flex-col w-full h-screen gap-10 overflow-hidden ustify-start pt-52">
                     <div className="flex flex-col justify-start space-y-4">
-                        <h1 className="text-6xl font-bold text-blue-500 lg:text-8xl">
+                        <h1 className="text-8xl lg:text-7xl font-bold text-blue-500 xl:text-8xl">
                             <span className="font-bold text-red-400">
                                 Consulta{" "}
                             </span>
@@ -21,8 +21,7 @@ const HeroSection = () => {
                     </div>
                     <div className="">
                         <Link href="/#contact">
-                            <a className="px-6 py-4 font-bold text-white bg-blue-500 rounded-full">
-                                {" "}
+                            <a className="px-6 py-4 font-bold text-white bg-blue-500 rounded-full hover:bg-red-400 trasition-all duration-200 ease-in-out">
                                 Más Información
                             </a>
                         </Link>

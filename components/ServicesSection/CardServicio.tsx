@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FC } from "react";
 
 interface Service {
+    id: number;
     service: string;
     image: string;
     shortDescription: string;
@@ -12,7 +13,7 @@ interface CardServicioProps {
 }
 
 const CardServicio: FC<CardServicioProps> = ({ service }) => {
-    const { service: title, image, shortDescription } = service;
+    const { service: title, image, shortDescription, id } = service;
 
     return (
         <div className="flex flex-col justify-between max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">
@@ -43,7 +44,7 @@ const CardServicio: FC<CardServicioProps> = ({ service }) => {
             </div>
             <div className="p-5">
                 <a
-                    href="#"
+                    href={`/services/${id}`}
                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:text-blue-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                     Ver

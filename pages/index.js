@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import AboutSection from "../components/AboutSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import TeamSection from '../components/TeamSection'
 import Link from "next/link";
 
 const Home = ({ services }) => {
@@ -26,6 +27,7 @@ const Home = ({ services }) => {
                 <HeroSection />
                 <AboutSection />
                 <ServicesSection services={services} />
+                <TeamSection />
                 <ContactSection />
             </Layout>
         </>

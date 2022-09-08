@@ -5,14 +5,14 @@ const initialState = {
     stickyClass: "h-20",
 };
 const Header = () => {
-       const { pathname } = useRouter();
+    const { pathname } = useRouter();
     const [stickyClass, setStickyClass] = useState(initialState.stickyClass);
 
     function stickNavbar() {
         let windowHeight = window.scrollY;
         setStickyClass(
             windowHeight > 0
-                ? "bg-gray-100/90 backdrop-blur-sm shadow h-16"
+                ? "bg-gray-50/90 backdrop-blur-md shadow h-16"
                 : initialState.stickyClass
         );
     }
