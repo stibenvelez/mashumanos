@@ -2,9 +2,11 @@ import Link from "next/link";
 
 const HeroSection = () => {
     return (
-        <section
-            className={`bg-[url('/static/img/hero-01.svg')] bg-cover  bg-no-repeat p-2 bg-[center_top_6rem] lg:bg-center  bg-gray-50 `}
-        >
+        <section className={`relative `}>
+            <img
+                src="/static/img/hero-01.svg"
+                className="fixed -z-10 w-full object-cover h-screen object-no-repeat object-left lg:object-center  "
+            />
             <div className="container mx-auto ">
                 <div className="flex flex-col w-full h-screen gap-10 overflow-hidden ustify-start pt-52">
                     <div className="flex flex-col justify-start space-y-4">
