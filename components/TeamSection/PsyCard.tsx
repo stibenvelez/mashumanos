@@ -23,6 +23,7 @@ const PsyCard = ({ psy }) => {
                 </p>
                 <p className="text-gray-400 text-center">{corriente}</p>
             </div>
+
         </div>
     );
 };
